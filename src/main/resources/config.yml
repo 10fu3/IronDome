@@ -1,0 +1,55 @@
+# #がついている行はコメントです。プラグインからは認識されない行です。ご注意ください。
+#コメントの行とそうでない行の認識が容易なエディタで編集することをお勧めします。(Bracketsなど)
+#このファイルの記述が終わったら、以下のfalseをtrueに書き換えてください。
+flag: false
+
+##################################################################################
+
+#ログイン時にプレーヤーを検査するか(true / false)
+UserCheckMode: true
+#次の評判値を超過していないプレーヤはログインできません(小数点)
+Rep: 8.0
+#次の数以上BANされているプレーヤーはサーバーにログインできません。(整数)
+BanCount: 2
+#このプラグインのみが終了されたときにサーバーごと終了するか(true / false)
+SelfDefence: false
+#次の国(国名コード)以外からの接続をすべて拒否します。
+#以下記述例　(PermissionExのPermission.ymlと書き方は同じです。)
+#whitelist-country:
+#- jp
+whitelist-country:
+- jp
+#次の国(国名コード)からの接続をすべて拒否します。
+#以下記述例　(PermissionExのPermission.ymlと書き方は同じです。)
+#blacklist-country:
+#- 	it
+blacklist-country:
+
+#次のプレーヤー以外がOPのとき、サーバーから排除されます。(空のときは機能しません。)
+#また次のプレーヤーがOPではないとき、OPとしてサーバーに追加されます。（空のときは機能しません。）
+#以下記述例　(PermissionExのPermission.ymlと書き方は同じです。)
+#ops:
+#- qwerty12345
+#- asdfg67890
+#- zxcvbnm13579
+ops:
+#次のプラグインが無効化されたときに回復します。
+#以下記述例　(PermissionExのPermission.ymlと書き方は同じです。)
+#plugins:
+#- coreprotect
+#- autosaveworld
+#- lwc
+plugins:
+#PermissionsEx乗っ取り対策用ダミー権限（次のダミー権限を持っているプレーヤーはキックされます。
+#全権限(- '*')を保持しているプレーヤーから次のダミー権限(デフォルトの場合は - -irondome.security)を剥奪してください。剥奪しないとキックされます。)
+kick-permission:
+- irondome.security
+#同じアドレスから接続できるアカウント数
+AltCount: 0
+
+##################################################################################
+
+#次の項目は編集しないでください。
+configver: 4
+
+

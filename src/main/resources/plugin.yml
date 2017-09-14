@@ -1,0 +1,35 @@
+name: IronDome
+version: ${project.version}
+main: ru.plsecuritylab.irondome.IronDome
+softdepend: [PermissionsEx]
+
+commands:
+  id:
+    description: 'This is main commands of irondome'
+  idreload:
+    description: 'This is reload commands of irondome'
+permissions:
+  irondome.info.plugins:
+    description: '指定されたプラグインに何かが起きた時お知らせします'
+    default: op
+  irondome.info.join:
+    description: 'プレーヤのログイン時にプレーヤーの情報を提供します'
+    default: op
+  irondome.info.search:
+    description: '指定したプレーヤーの情報を提供します。'
+    default: op
+  irondome.info.history:
+    decription: 'ログイン履歴を表示します。'
+    default: op
+  irondome.util.access:
+    description: 'プラグインにアクセスできるようになります'
+    default: op
+  irondome.util.reload:
+    description: 'プラグインをリロードします'
+    default: false
+  irondome.util.shield:
+    description: '設定を変更します。'
+    default: false
+  irondome.bypath.alts:
+    description: 'Ban command.'
+    default: false
